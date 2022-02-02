@@ -16,13 +16,125 @@ header {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-color: #2C3944;
-  color: #fff;
+  color: #FFF;
   text-align: center;
   text-transform: uppercase;
 }
 
-h1 {
+main {
+  padding: 0 5vw;
+}
+
+footer {
+  padding-bottom: 33vh;
+  text-align: center;
+  font-style: italic;
+}
+
+h1, h2, legend {
   font-size: 1.125rem;
+}
+
+h2, legend {
+  margin-bottom: .75rem;
+  font-weight: 900;
+}
+
+hr {
+  margin-bottom: 1.25rem;
+  padding: 1px 0;
+  border: none;
+  border-top: 4.5px solid #2C3944;
+  border-bottom: 3px solid #2C3944;
+}
+
+form hr {
+  padding: 0;
+  border-top: none;
+}
+
+div.intro {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.intro p,
+footer {
+  font-size: .875rem;
+  color: #AAAEB3;
+}
+
+/* ##################################################
+    Form Styles
+################################################## */
+
+fieldset {
+  border: none;
+}
+
+#contact fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+legend {
+  margin: 1.25rem 0;
+}
+
+label {
+  /* margin-bottom: 1rem; */
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4E6274;
+  line-height: 1.5;
+}
+
+#newsletter label {
+  display: block;
+}
+
+#newsletter label.option {
+  display: inline-block;
+}
+
+#contact input,
+select,
+#newsletter textarea,
+button {
+  width: 100%;
+  padding: .875rem 1rem;
+  background: #EFF1F1;
+  border: none;
+  border-radius: .3em;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+}
+
+select {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: .875rem;
+  color: #AAAEB3;
+} /* Arrow color */
+
+option {
+  color: #000;
+}
+
+::placeholder {
+  font-size: .75rem;
+  font-style: italic;
+  text-align: right;
+  opacity: .5;
+}
+
+button[type="submit"] {
+  margin: 1.5rem 0 1.75rem;
+  padding: 1.125rem;
+  background: #4EBBB5;
+  color: #FFF;
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 
 /* ##################################################
