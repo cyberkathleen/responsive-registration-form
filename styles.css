@@ -192,12 +192,43 @@ select:focus {
     font-size: 1.5rem;
   }
 
-  hr {
+  hr,
+  form hr {
     margin-bottom: 3rem;
+  }
+
+  form hr {
+    margin-top: 1.75rem;
   }
 
   div.intro {
     padding-top: 4rem;
     padding-bottom: 3rem;
+  }
+
+  div.pair {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.25rem;
+  }
+
+  #contact label {
+    flex-basis: 25%;
+    height: 50px;
+    margin: auto 0;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  #contact input,
+  select {
+    width: initial;
+    flex-grow: 1;
+    flex-basis: 75%;
+    margin: 0;
+  }
+
+  button[type="submit"] {
+    margin-bottom: 2.25rem;
   }
 }
