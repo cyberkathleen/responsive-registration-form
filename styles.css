@@ -118,7 +118,7 @@ select {
 }
 
 input#zip {
-  width: 50%;
+  max-width: 50%;
 }
 
 input[type="radio"],
@@ -206,7 +206,8 @@ select:focus {
     padding-bottom: 3rem;
   }
 
-  div.pair {
+  div.pair,
+  fieldset div:nth-last-of-type(1) {
     display: flex;
     flex-direction: row;
     margin-bottom: 1.25rem;
@@ -226,6 +227,10 @@ select:focus {
     flex-grow: 1;
     flex-basis: 75%;
     margin: 0;
+  }
+
+  input#zip {
+    max-width: 25%;
   }
 
   button[type="submit"] {
