@@ -33,11 +33,11 @@ footer {
 
 h1, h2, legend {
   font-size: 1.125rem;
+  font-weight: 900;
 }
 
-h2, legend {
+h2 {
   margin-bottom: .75rem;
-  font-weight: 900;
 }
 
 hr {
@@ -47,9 +47,10 @@ hr {
   border-top: 4.5px solid #2C3944;
   border-bottom: 3px solid #2C3944;
 }
-
 form hr {
   padding: 0;
+  margin-top: .75rem;
+  margin-bottom: 1.5rem;
   border-top: none;
 }
 
@@ -72,13 +73,14 @@ fieldset {
   border: none;
 }
 
-#contact fieldset {
+#contact fieldset,
+fieldset div:nth-last-of-type(1) {
   display: flex;
   flex-direction: column;
 }
 
-legend {
-  margin: 1.25rem 0;
+#contact legend {
+  margin-bottom: 1.5rem;
 }
 
 label {
@@ -88,37 +90,80 @@ label {
   color: #4E6274;
   line-height: 1.5;
 }
-
 #newsletter label {
   display: block;
 }
-
 #newsletter label.option {
   display: inline-block;
 }
 
 #contact input,
 select,
-#newsletter textarea,
+textarea,
 button {
   width: 100%;
-  padding: .875rem 1rem;
+  height: 50px;
+  padding: .75rem 1.25rem;
   background: #EFF1F1;
   border: none;
   border-radius: .3em;
   font-family: 'Merriweather', serif;
-  font-size: 1rem;
+  font-size: .875rem;
+}
+
+#contact input,
+select {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+input#zip {
+  width: 50%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: baseline;
+  margin-right: 10px;
+}
+
+#newsletter label:not(.option) {
+  margin-top: 1.5rem;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+#newsletter label.option {
+  margin-top: .825rem;
 }
 
 select {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: .875rem;
   color: #AAAEB3;
-} /* Arrow color */
+}
 
 option {
   color: #000;
+}
+
+textarea {
+  height: 100px;
+  margin-top: 1rem;
+}
+
+button[type="submit"] {
+  height: 60px;
+  margin: 1.5rem 0 1.75rem;
+  padding: 1.125rem;
+  background: #4EBBB5;
+  color: #FFF;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+#contact input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #2C3944;
 }
 
 ::placeholder {
@@ -126,15 +171,6 @@ option {
   font-style: italic;
   text-align: right;
   opacity: .5;
-}
-
-button[type="submit"] {
-  margin: 1.5rem 0 1.75rem;
-  padding: 1.125rem;
-  background: #4EBBB5;
-  color: #FFF;
-  font-size: 1.125rem;
-  font-weight: bold;
 }
 
 /* ##################################################
