@@ -187,4 +187,17 @@ select:focus {
   footer {
     padding-bottom: 45vh;
   }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    margin-bottom: 3rem;
+  }
+
+  div.intro {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
 }
