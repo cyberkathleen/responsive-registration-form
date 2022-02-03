@@ -169,8 +169,12 @@ select:focus {
 ::placeholder {
   font-size: .75rem;
   font-style: italic;
-  text-align: right;
   opacity: .5;
+}
+
+#name::placeholder,
+#email::placeholder {
+  text-align: right;
 }
 
 /* ##################################################
